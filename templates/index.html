@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hitung Hari Ulang Tahun</title>
+</head>
+<body>
+    <h1>Hitung Total Hari Sejak Kamu Lahir 🎂</h1>
+    <form method="POST">
+        <label for="birthdate">Masukkan Tanggal Lahir:</label><br>
+        <input type="date" name="birthdate" required><br><br>
+        <button type="submit">Hitung</button>
+    </form>
+
+    {% if days is not none %}
+        <h2>Kamu sudah hidup selama <strong>{{ days }}</strong> hari sejak {{ birthdate }}</h2>
+    {% endif %}
+</body>
+</html>
